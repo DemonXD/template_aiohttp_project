@@ -1,57 +1,13 @@
-### AIOHttp Project Structure
-```Shell
-.
-├── readme.md
-├── template_aiohttp_project
-│   ├── aiohttp_example
-│   │   ├── websocket.html
-│   │   └── web_ws.py
-│   ├── apps
-│   │   ├── baseapp
-│   │   │   ├── __init__.py
-│   │   │   ├── models.py
-│   │   │   ├── urls.py
-│   │   │   └── views.py
-│   │   └── __init__.py
-│   ├── db.py
-│   ├── manager.py
-│   ├── README.md
-│   ├── requirements.txt
-│   ├── settings.py
-│   ├── templates
-│   │   └── index.html
-│   ├── test.db
-│   └── utils
-│       ├── ackdict.py
-│       ├── async_sqlite.py
-│       ├── __init__.py
-│       ├── mqtt_subscriber.py
-│       ├── normal_utils.py
-│       └── signalSlotPattern.py
-└── template_aiohttp_project_2
-    ├── app.py
-    ├── config
-    │   ├── config_base.py
-    │   ├── initconf.py
-    │   ├── __init__.py
-    │   └── PubManager.py
-    ├── config.ini
-    ├── handlers
-    │   ├── http_handler.py
-    │   ├── __init__.py
-    │   └── ws_handler.py
-    ├── __init__.py
-    ├── models
-    │   ├── base.py
-    │   └── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── utils
-        ├── db
-        │   ├── dbHelper.py
-        │   └── __init__.py
-        ├── __init__.py
-        └── mqtt
-            ├── __init__.py
-            └── mqttHelper.py
-```
+### 说明
+
+- 配置路由: /router/urls.py
+- 配置文件：/config.ini
+- 配置view层：/handlers
+- 配置项文件读取: /config/config_base.py
+- 配置初始化配置项： /config/initconf.py
+- 全局资源使用： /global_/PubManager.py
+- 启动文件: /app.py
+
+
+log默认存储在项目根目录下: /log/*.log  
+修改log存储目录：/config.ini 下的filepath变量

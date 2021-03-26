@@ -1,0 +1,135 @@
+test:
+  log:
+    level : DEBUG
+    filepath : ./log
+    logname_info : ocr_info.log
+    logname_error : ocr_error.log
+  master:
+    ip : 0.0.0.0
+    port : 8888
+  db-postgresql:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : ""
+    minconn : ""
+    maxconn : ""
+  db-mysql:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : 3306
+    minconn : 1
+    maxconn : 10
+    charset : "utf8"
+  db-mongo:
+    url : ''
+    host : ""
+    port : 8635
+    user: ""
+    password: ""
+    database : ""
+    collection : ""
+  redis:
+    host : ""
+    port : 6379
+    db : 10
+    password : ""
+  mqtt:
+    host : ""
+    port : 1883
+    topic : +/+/suback
+    username : super
+    password : superpwd
+
+development:
+  log:
+    level : DEBUG
+    filepath : ./log
+    logname_info : ocr_info.log
+    logname_error : ocr_error.log
+  master:
+    ip : 0.0.0.0
+    port : 8888
+  db-postgresql:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : ""
+    minconn : ""
+    maxconn : ""
+  db-mysql:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : 3306
+    minconn : 1
+    maxconn : 10
+    charset : "utf8"
+  db-mongo:
+    url : ''
+    host : ""
+    port : 8635
+    user: ""
+    password: ""
+    database : ""
+    collection : ""
+  redis:
+    host : ""
+    port : 6379
+    db : 10
+    password : ""
+  mqtt:
+    host : ""
+    port : 1883
+    topic : +/+/suback
+    username : super
+    password : superpwd
+  
+production:
+  log:
+    level : ERROR
+    filepath : ./log
+    logname_info : ocr_info.log
+    logname_error : ocr_error.log
+  master:
+    ip : 0.0.0.0
+    port : 8888
+  db-postgresql:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : ""
+    minconn : ""
+    maxconn : ""
+  db-mysql:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : ""
+    minconn : ""
+    maxconn : ""
+  db-mongodb:
+    dbname : ""
+    user : ""
+    password : ""
+    host : ""
+    port : ""
+    collection : ""
+  redis:
+    host : ""
+    port : 6379
+    db : 10
+    password : ""
+  mqtt:
+    host : ""
+    port : 1883
+    topic : +/+/suback
+    username : super
+    password : superpwd
